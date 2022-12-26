@@ -1,6 +1,8 @@
 # PG Diploma in AI-ML from NIT-Warangal
 
-## 1. Post Graduate Diploma in Artificial Intelligence Course
+1. Post Graduate Diploma in Artificial Intelligence Course
+2. Python for AI-ML
+### 1. Post Graduate Diploma in Artificial Intelligence Course
 
 ## 2. Python for AI-ML
 1. Python Basics I
