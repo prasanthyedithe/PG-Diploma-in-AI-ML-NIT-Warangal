@@ -1,10 +1,8 @@
 # PG Diploma in AI-ML from NIT-Warangal
 
-1. Post Graduate Diploma in Artificial Intelligence Course
-2. Python for AI-ML
 ### 1. Post Graduate Diploma in Artificial Intelligence Course
 
-## 2. Python for AI-ML
+### 2. Python for AI-ML
 1. Python Basics I
 1. Python Basics II
 1. Introduction to NumPy & Pandas
@@ -14,7 +12,7 @@
 1. Python for AI-ML (Self-Paced)
 
 
-## 3. Predictive Analytics
+### 3. Predictive Analytics
 1. Statistical Foundations
 1. Probablity
 1. Inferential Statistics
@@ -22,7 +20,7 @@
 1. Doubt Clearing Session + End Course Test
 1. Predictive Analytics (Self-Paced)
 
-## 4. Machine Learning
+### 4. Machine Learning
 1. Introduction to Machine Learning
 1. Supervised Learning - Classification
 1. Supervised Learning - Classification II
@@ -32,9 +30,9 @@
 1. Machine Learning (Self-Paced)
 1. ML Deployment in Cloud - Sagemaker (Self-Paced)
 
-## 5. Mid-Program Project 1 
+### 5. Mid-Program Project 1 
 
-## 6. Deep Learning
+### 6. Deep Learning
 1. Introduction to Deep Learning
 1. Getting started with Tensorflow 2.0 with Tensor Board
 1. Image Classification using CNN
@@ -45,7 +43,7 @@
 1. Image Segmentation using Facebook Detectron 2.0 (Self-paced)
 1. Data Tagging(VOTT) for Computer Vision (Self-paced)
 
-## 7. Natural Language Processing  
+### 7. Natural Language Processing  
 1. Introduction to NLP with Spacy
 1. Analyzing and Seggregating the News Headlines
 1. Building a Resume Classifier
@@ -53,9 +51,9 @@
 1. NLP in Production
 1. Doubt Clearing Session + End Course Test
 
-## 8. Mid-Program Project 2   
+### 8. Mid-Program Project 2   
 
-## 9. Sequence Learning 18th Jun
+### 9. Sequence Learning 18th Jun
 1. Introduction to Sequence Learning
 1. RNN vs LSTM with Google Stock Price
 1. Sentiment Analysis on Zomato Reviews using LSTM
@@ -65,4 +63,4 @@
 1. Building a Question Answer prediction model using BERT (Self-paced)
 1. Doubt Clearing Session + End Course Test
 
-## 10. Industry Grade Project 
+### 10. Industry Grade Project 
