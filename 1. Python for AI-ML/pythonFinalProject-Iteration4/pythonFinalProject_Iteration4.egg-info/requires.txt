@@ -1,0 +1,12 @@
+click>=7.1.2
+setuptools~=63.4.1
+feedparser~=6.0.10
+xmltodict~=0.13.0
+goose3~=3.1.11
+django-wkhtmltopdf~=3.4.0
+pip~=21.3.1
+requests~=2.28.1
+beautifulsoup4~=4.11.1
+PyPDF2~=2.10.3
+pdfkit~=1.0.0
+FB2~=0.1.7

@@ -1,0 +1,2 @@
+[console_scripts]
+rss_reader_utility = rss_reader_utility:main

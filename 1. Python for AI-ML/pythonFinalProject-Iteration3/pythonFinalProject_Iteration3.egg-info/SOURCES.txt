@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+rss_reader.py
+setup.py
+pythonFinalProject_Iteration3.egg-info/PKG-INFO
+pythonFinalProject_Iteration3.egg-info/SOURCES.txt
+pythonFinalProject_Iteration3.egg-info/dependency_links.txt
+pythonFinalProject_Iteration3.egg-info/entry_points.txt
+pythonFinalProject_Iteration3.egg-info/not-zip-safe
+pythonFinalProject_Iteration3.egg-info/requires.txt
+pythonFinalProject_Iteration3.egg-info/top_level.txt

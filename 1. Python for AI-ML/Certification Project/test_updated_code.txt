@@ -1,0 +1,77 @@
+import calendar
+from datetime import datetime
+import pandas as pd
+import numpy as np
+from sklearn.preprocessing import OneHotEncoder
+
+def solution():
+    df = pd.read_csv("res/train.csv")
+    # print("Initial Shape of DataFrame:", df.shape)
+    df_original = df
+    print(df_original.head())
+    # Question # 1
+    # --------------------------------------------
+
+    # Creating a Date column form existing datetime column
+    df['Date'] = pd.to_datetime(df['datetime']).dt.strftime('%m/%d/%Y')
+    df_date = df.groupby('Date')['Date'].count().sort_values(ascending=False).reset_index(name='count')
+    df['datetime'] = pd.to_datetime(df['datetime'], format='%m/%d/%Y %H:%M')
+    time = df['datetime'].iloc[0]
+    # Creating a Hours,Month,Day Of Week column form existing datetime column
+    df['Hour'] = df['datetime'].apply(lambda x: x.hour)
+    df['Month'] = df['datetime'].apply(lambda x: x.month)
+    df['Day of Week'] = df['datetime'].apply(lambda x: x.dayofweek)
+    # Converting the Day Of Week to Text using the dMap
+    dmap = {0:'Monday',1:'Tuesday',2:'Wednesday',3:'Thursday',4:'Friday',5:'Saturday',6:'Sunday'}
+    df['Day of Week'] = df['Day of Week'].apply(lambda x: dmap[x])
+    dmonth = {1:'January',2:'Feburary',3:'March',4:'April',5:'May',6:'June',7:'July',8:'August',9:'September',10:'October',11:'November',12:'December'}
+    df['Month'] = df['Month'].apply(lambda x: dmonth[x])
+    # Saving the DataFrame to CSV file with Index as well
+    df.to_csv('output/output1.csv')
+    print("-----------------------Question-1----------------------------------")
+    print(df.head())
+
+    # Question # 2
+    # --------------------------------------------
+
+    # Creating a Year column form existing datetime column 
+    df['Year'] = df['datetime'].apply(lambda x: x.year)
+    df_question_2 = df.groupby(['Month','Year'])['Total_booking'].mean().reset_index(name='Monthly Average')
+    df_question_2.sort_values(["Monthly Average"], axis=0,ascending=False, inplace=True)
+
+    # Saving the DataFrame to CSV file with Index as well
+    df_question_2.to_csv('output/output2.csv')
+    print("------------------------Question-2----------------------------------")
+    print(df_question_2.head())
+
+
+    # Question #3
+    # --------------------------------------------
+
+    # Sub-1 : Converted all categorical data to 1 feature
+    categorical_cols = ['Date','Hour','Month','Day of Week','Year']
+        
+    #creating instance of one-hot-encoder
+    encoder = OneHotEncoder(handle_unknown='ignore')
+
+    #perform one-hot encoding on 'team' column 
+    encoder_df = pd.DataFrame(encoder.fit_transform(df[['Date','Hour','Month','Day of Week','Year']]).toarray())
+    print("------------------------Question-3.1----------------------------------")
+    print(encoder_df.head())
+    print(encoder_df.shape)
+   
+    # Sub-2 : Concat one hot encoded features into original dataframe
+    print("------------------------Question-3.2----------------------------------")
+    final_encoder_df = df.join(encoder_df)
+    print(final_encoder_df.shape)
+
+    # Sub-3 :  Remove the original columns from the dataframe
+    final_df= final_encoder_df.drop(df_original.columns,axis=1,inplace=False)
+    # Saving the DataFrame to CSV file with Index as well
+    final_df.to_csv('output/output3.csv')
+    print("------------------------Question-3.3----------------------------------")
+    print("Original DataFrame Columns Shape:",df_original.shape)
+    print("Encoder Columns Shape:",final_encoder_df.shape)
+    print("Final Columns Shape:",final_df.shape)
+
+solution()
