@@ -3,13 +3,13 @@
 ## 1. Post Graduate Diploma in Artificial Intelligence Course
 
 ## 2. Python for AI-ML
-Python Basics I
-Python Basics II
-Introduction to NumPy & Pandas
-Data Preprocessing & Manipulation
-Data Visualization
-Doubt Clearing Session + End Course Test
-Python for AI-ML (Self-Paced)
+1. Python Basics I
+1. Python Basics II
+1. Introduction to NumPy & Pandas
+1. Data Preprocessing & Manipulation
+1. Data Visualization
+1. Doubt Clearing Session + End Course Test
+1. Python for AI-ML (Self-Paced)
 
 
 ## 3. Predictive Analytics
