@@ -1,8 +1,8 @@
 # PG Diploma in AI-ML from NIT-Warangal
 
-### 1. Post Graduate Diploma in Artificial Intelligence Course `Completed`
+### 1. Post Graduate Diploma in Artificial Intelligence Course 
 
-### 2. Python for AI-ML `Completed`
+### 2. Python for AI-ML 
 1. Python Basics I
 1. Python Basics II
 1. Introduction to NumPy & Pandas
@@ -12,7 +12,7 @@
 1. Python for AI-ML (Self-Paced)
 
 
-### 3. Predictive Analytics `In-Progress`
+### 3. Predictive Analytics 
 1. Statistical Foundations
 1. Probablity
 1. Inferential Statistics
