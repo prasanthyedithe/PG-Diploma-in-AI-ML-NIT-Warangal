@@ -1,0 +1,17 @@
+1. Install Anaconda:
+	Download anaconda distribution
+	Install Anaconda
+	This will create a 'base' environment
+2. Create a new environment:
+	conda create --name nitw
+3. Create a clone of a any other environment:
+	conda create --name nitw --clone base
+4. When you want to use a particular environment, activate that environment:
+	conda activate nitw
+5. Install the ipython kernel for the new environment
+	ipython kernel install --user --name=nitw
+6. Add any other python packages:
+	conda install -c conda-forge wikipedia
+	conda install -c conda-forge tweepy
+7. Deactivate the environment (will return to base)
+	conda deactivate
